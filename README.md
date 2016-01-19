@@ -2,6 +2,20 @@
 
 A service provider and facade to set up and use the SendPulse PHP library in Laravel 5.
 
+[![Build Status](https://travis-ci.org/garethtdavies/sendpush-laravel.svg?branch=master)](https://travis-ci.org/garethtdavies/sendpush-laravel)
+
+This package consists of a service provider, which binds an instance of an initialized SendPulse client to the
+IoC-container and a SendPulse facade so you may access all methods of the SendpulseApi class via the syntax:
+
+```php
+$message = ['title' => 'My first notification', 'website_id' => 1, 'body' => 'I am the body of the push message'];
+
+SendPulse::createPushTask($message);
+```
+
+You should refer to the [SendPulse API](https://sendpulse.com/api) and underlying [SendPush PHP class](https://github.com/garethtdavies/sendpulse-rest-api-php) for full details about all
+available methods.
+
 ## Setup
 
 1. Install the 'wensleydale/sendpulse-laravel' package
@@ -33,3 +47,25 @@ A service provider and facade to set up and use the SendPulse PHP library in Lar
 	```shell
     $ php artisan vendor:publish
     ```
+
+### Type Hinting
+
+If you do not wish to make use of the SendPulse facade you may simply "type-hint" the SendPulse dependency in the
+constructor of a class that is resolved by the IoC container and an instantiated client will be ready for use.
+
+
+```php
+use SendPulse\SendpulseApi;
+
+private $client;
+
+public function __construct(SendpulseApi $client)
+{
+    $this->client = $client;
+}
+
+public function getWebsites()
+{
+	$this->client->pushListWebsites();
+}
+```
