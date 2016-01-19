@@ -2,7 +2,7 @@
 
 A service provider and facade to set up and use the SendPulse PHP library in Laravel 5.
 
-[![Build Status](https://travis-ci.org/garethtdavies/sendpush-laravel.svg?branch=master)](https://travis-ci.org/garethtdavies/sendpush-laravel)
+[![Build Status](https://travis-ci.org/garethtdavies/sendpulse-laravel.svg?branch=master)](https://travis-ci.org/garethtdavies/sendpulse-laravel)
 
 This package consists of a service provider, which binds an instance of an initialized SendPulse client to the
 IoC-container and a SendPulse facade so you may access all methods of the SendpulseApi class via the syntax:
