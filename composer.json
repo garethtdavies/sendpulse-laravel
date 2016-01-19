@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Wensleydale\\SendPulseLaravel\\": "src/"
+      "SendPulse\\SendPulseLaravel\\": "src/"
     }
   }
 }

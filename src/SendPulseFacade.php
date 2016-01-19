@@ -1,6 +1,6 @@
 <?php
 
-namespace Wensleydale\SendPulseLaravel;
+namespace SendPulse\SendPulseLaravel;
 
 use Illuminate\Support\Facades\Facade;
 
