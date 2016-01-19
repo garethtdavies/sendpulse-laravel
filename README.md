@@ -18,13 +18,13 @@ A service provider and facade to set up and use the SendPulse PHP library in Lar
     # Add `SendPushLaravelServiceProvider` to the `providers` array
     'providers' => array(
         ...
-        'Wensleydale\SendPulseLaravel\SendPushLaravelServiceProvider',
+        'Wensleydale\SendPulseLaravel\SendPulseLaravelServiceProvider',
     )
 
     # Add the `SendPushFacade` to the `aliases` array
     'aliases' => array(
         ...
-        'SendPulse' => 'Wensleydale\SendPulseLaravel\SendPushFacade',
+        'SendPulse' => 'Wensleydale\SendPulseLaravel\SendPulseFacade',
     )
     ```
 
