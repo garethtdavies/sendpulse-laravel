@@ -24,7 +24,7 @@ A service provider and facade to set up and use the SendPulse PHP library in Lar
     # Add the `SendPushFacade` to the `aliases` array
     'aliases' => array(
         ...
-        'SendPush' => 'Wensleydale\SendPulseLaravel\SendPushFacade',
+        'SendPulse' => 'Wensleydale\SendPulseLaravel\SendPushFacade',
     )
     ```
 
