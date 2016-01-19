@@ -29,7 +29,7 @@ available methods.
 2. Update 'config/app.php'
 
     ```php
-    # Add `SendPushLaravelServiceProvider` to the `providers` array
+    # Add `SendPulseLaravelServiceProvider` to the `providers` array
     'providers' => array(
         ...
         'SendPulse\SendPulseLaravel\SendPulseLaravelServiceProvider',
