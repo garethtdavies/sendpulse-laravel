@@ -1,6 +1,6 @@
 # SendPulse Laravel Helper
 
-A service provider and facade to set up and use the SendPulse PHP library in Laravel 5.
+A service provider and facade to set up and use the [SendPulse](https://sendpulse.com/) PHP library in Laravel 5.
 
 [![Build Status](https://travis-ci.org/garethtdavies/sendpulse-laravel.svg?branch=master)](https://travis-ci.org/garethtdavies/sendpulse-laravel)
 
