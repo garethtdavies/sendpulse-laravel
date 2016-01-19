@@ -18,17 +18,17 @@ A service provider and facade to set up and use the SendPulse PHP library in Lar
     # Add `SendPushLaravelServiceProvider` to the `providers` array
     'providers' => array(
         ...
-        'Wensleydale\SendPushLaravel\SendPushLaravelServiceProvider',
+        'Wensleydale\SendPulseLaravel\SendPushLaravelServiceProvider',
     )
 
     # Add the `SendPushFacade` to the `aliases` array
     'aliases' => array(
         ...
-        'SendPush' => 'Wensleydale\SendPushLaravel\SendPushFacade',
+        'SendPush' => 'Wensleydale\SendPulseLaravel\SendPushFacade',
     )
     ```
 
-3. Publish the configuration file (creates sendpush.php in config directory) and add your API keys and optional default settings.
+3. Publish the configuration file (creates sendpulse.php in config directory) and add your API keys and optional default settings.
 
 	```shell
     $ php artisan vendor:publish
