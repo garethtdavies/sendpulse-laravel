@@ -1,0 +1,25 @@
+{
+  "name": "wensleydale/sendpulse-laravel",
+  "description": "A minimal service provider to set up and use the SendPulse PHP library in Laravel 5",
+  "keywords": ["sendpulse", "laravel"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gareth Davies",
+      "email": "hello@garethtdavies.com"
+    }
+  ],
+  "require": {
+    "illuminate/support": "5.*",
+    "wensleydale/sendpulse-rest-api-php": "~1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0",
+    "mockery/mockery": "0.9.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Wensleydale\\SendPulseLaravel\\": "src/"
+    }
+  }
+}
