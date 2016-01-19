@@ -1,6 +1,6 @@
 <?php
 
-namespace Wensleydale\SendPulseLaravel ;
+namespace SendPulse\SendPulseLaravel ;
 
 require __DIR__. '/../vendor/autoload.php' ;
 
